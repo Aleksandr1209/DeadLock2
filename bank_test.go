@@ -112,7 +112,7 @@ func TestConcurrentTransfers(t *testing.T) {
 	for _, acc := range bank.Accounts {
 		total += acc.Balance
 	}
-	expectedTotal := 100 * 1000 // 100 счетов по 1000
+	expectedTotal := 100 * 1000
 	if total != expectedTotal {
 		t.Errorf("Общий баланс изменился: got %d, want %d", total, expectedTotal)
 	}
